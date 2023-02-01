@@ -53,10 +53,12 @@ console.log(bubble(n));
   <script>
 
 //advanced 
+// replace '$' by ' '
 var s1= "Properties,$a$set$of$immutable$values,$are$passed$to$a$component's$renderer$as$properties$in$its $HTML$tag.$A$component$cannot$directly$modify$any$properties$passed$to$it,$but$can$be$passed$ callback$functions$that$do$modify$values.$This$mechanism's$promise$is$expressed$as$properties $flow$down;$actions$flow$up";
-s2=s1.split('$');
-console.log(s1.replaceAll(' ','').replaceAll('$', ' ')+'.');
 
+console.log(s1.replaceAll(' ','').replaceAll('$', ' ')+'.');
+// intermediate
+//remove, add elements to array 
 let people = ['Greg', 'Mary', 'Devon','James'];
 function remove(a, e){
   var ind = a.indexOf(e);
@@ -71,8 +73,12 @@ people.push('Leo');
 console.table(people);
 
 //intermediate
+//access array elements
 var ar=[ [1, 2, 1, 24], [8, 11, 9, 4], [7, 0, 7, 27], [7, 4, 28, 14], [3, 10, 25, 7], [21, 4, 6, 17], [3, 5, 26, 3] ];
+//access specific element in 2d array
 console.log(ar[1][4]);
+
+//access specific element in another way
 
 ar=[[1,2,3],[6,7,8],[9,0,33]];
 ar1=ar.splice(1,2);
