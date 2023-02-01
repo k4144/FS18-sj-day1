@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+   
+   <link rel="stylesheet" href="css/advanced.css">
+   <style>
+       
+    </style>
+</head>
+
+<body>
+    <h1>HTML here</h1>
+<script>
+    //sorting
+  function bubble(a){
+    var sorted=false;
+    while(!sorted){
+    sorted=true;
+    for (var el=0;el<a.length;el++){
+      if (a[el]>a[el+1]){
+         [a[el], a[el+1]]=[a[el+1], a[el]];
+        sorted=false;
+      }
+    }
+ }
+  return a;
+}
+
+
+n=[1,4,7,23,1,0,9,-5,-12,3254,-245,0,8,2,4,1,9,563,56,45];
+console.log(n);
+console.log(bubble(n));
+</script>
+
+<div class="row">
+
+  <script>
+
+//advanced 
+var s1= "Properties,$a$set$of$immutable$values,$are$passed$to$a$component's$renderer$as$properties$in$its $HTML$tag.$A$component$cannot$directly$modify$any$properties$passed$to$it,$but$can$be$passed$ callback$functions$that$do$modify$values.$This$mechanism's$promise$is$expressed$as$properties $flow$down;$actions$flow$up";
+s2=s1.split('$');
+console.log(s1.replaceAll(' ','').replaceAll('$', ' ')+'.');
+
+let people = ['Greg', 'Mary', 'Devon','James'];
+function remove(a, e){
+  var ind = a.indexOf(e);
+  if (ind<0){return `element ${e} not found`;}
+  else {
+    return a.splice(0,ind).concat(a.splice(ind+1))
+  }
+}
+console.log(remove(people, 'james'));  
+console.table(people);
+people.push('Leo');
+console.table(people);
+
+//intermediate
+var ar=[ [1, 2, 1, 24], [8, 11, 9, 4], [7, 0, 7, 27], [7, 4, 28, 14], [3, 10, 25, 7], [21, 4, 6, 17], [3, 5, 26, 3] ];
+console.log(ar[1][4]);
+
+ar=[[1,2,3],[6,7,8],[9,0,33]];
+ar1=ar.splice(1,2);
+console.table(  ar1);
+
+</script>
+      
+      
+
+</body>
+
+</html>
+</body>
+</html>
